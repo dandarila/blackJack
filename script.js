@@ -57,19 +57,19 @@ newGameButton.addEventListener('click', function(){
   hitButton.style.display = 'inline';
   stayButton.style.display = 'inline';
   showStatus();
-  image3.src = 'jocker.jpg';
-  image4.src = 'jocker.jpg';
-  image5.src = 'jocker.jpg';
-  imagePlayer3.src = 'jocker.jpg';
-  imagePlayer4.src = 'jocker.jpg';
-  imagePlayer5.src = 'jocker.jpg';
+  image3.src = 'cards/jocker.jpg';
+  image4.src = 'cards/jocker.jpg';
+  image5.src = 'cards/jocker.jpg';
+  imagePlayer3.src = 'cards/jocker.jpg';
+  imagePlayer4.src = 'cards/jocker.jpg';
+  imagePlayer5.src = 'cards/jocker.jpg';
 })
 
 hitButton.addEventListener('click', function() {
   playerCards.push(getNextCard());
-  if(playerCards[2]) imagePlayer3.src = `${getCardString(playerCards[2])}.jpg`
-  if(playerCards[3]) imagePlayer4.src = `${getCardString(playerCards[3])}.jpg`
-  if(playerCards[4]) imagePlayer5.src = `${getCardString(playerCards[4])}.jpg`
+  if(playerCards[2]) imagePlayer3.src = `cards/${getCardString(playerCards[2])}.jpg`
+  if(playerCards[3]) imagePlayer4.src = `cards/${getCardString(playerCards[3])}.jpg`
+  if(playerCards[4]) imagePlayer5.src = `cards/${getCardString(playerCards[4])}.jpg`
   checkForEndofGame();
   showStatus();
 })
@@ -78,9 +78,9 @@ stayButton.addEventListener('click', function(){
   gameOver = true;
   checkForEndofGame();
   showStatus();
-  if(dealerCards[2]) image3.src = `${getCardString(dealerCards[2])}.jpg`
-  if(dealerCards[3]) image4.src = `${getCardString(dealerCards[3])}.jpg`
-  if(dealerCards[4]) image5.src = `${getCardString(dealerCards[4])}.jpg`
+  if(dealerCards[2]) image3.src = `cards/${getCardString(dealerCards[2])}.jpg`
+  if(dealerCards[3]) image4.src = `cards/${getCardString(dealerCards[3])}.jpg`
+  if(dealerCards[4]) image5.src = `cards/${getCardString(dealerCards[4])}.jpg`
 })
 
 
@@ -203,15 +203,15 @@ function showStatus(){
   let dealerCardString = '';
   for (let i=0; i < dealerCards.length; i++) {
     dealerCardString += getCardString(dealerCards[i]) + '\n';
-    image.src = `${getCardString(dealerCards[0])}.jpg`;
-    image2.src = `${getCardString(dealerCards[1])}.jpg`;
+    image.src = `cards/${getCardString(dealerCards[0])}.jpg`;
+    image2.src = `cards/${getCardString(dealerCards[1])}.jpg`;
     }
 
   let playerCardString = '';
   for (let i=0; i < playerCards.length; i++) {
     playerCardString += getCardString(playerCards[i]) + '\n';
-    imagePlayer.src = `${getCardString(playerCards[0])}.jpg`;
-    imagePlayer2.src = `${getCardString(playerCards[1])}.jpg`;
+    imagePlayer.src = `cards/${getCardString(playerCards[0])}.jpg`;
+    imagePlayer2.src = `cards/${getCardString(playerCards[1])}.jpg`;
     }
 
   updateScores();
