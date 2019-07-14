@@ -1,0 +1,84 @@
+body {
+  background-color: lightseagreen;
+}
+
+img {
+  height: 150px;
+  width: 100px;
+}
+
+#container {
+  display: flex;
+  flex-direction:row;
+  align-items:left;
+  padding-left: 10px;
+}
+#dealerCardsText {
+  text-align: center;
+  text-decoration-style: solid;
+}
+playerCardsText {
+  text-align: center;
+}
+
+#cardImage {
+  position:relative;
+  left: 80px;
+  z-index: 0;
+}
+#cardImage2 {
+  position : relative;
+  left: 20px;
+  z-index: 1;
+}
+#cardImage3 {
+  position : relative;
+  left: -40px;
+  z-index: 2;
+}
+#cardImage4 {
+  position : relative;
+  left: -100px;
+  z-index: 3;
+}
+
+#cardImage5 {
+  position : relative;
+  left : -160px;
+  z-index: 4;
+}
+
+
+#playerCardsImages {
+  position: relative;
+  left: -520px;
+  top: 200px;
+}
+#cardImagePlayer {
+  position:relative;
+  left: 80px;
+  z-index: 0;
+}
+#cardImagePlayer2 {
+  position : relative;
+  left: 20px;
+  z-index: 1;
+}
+#cardImagePlayer3 {
+  position : relative;
+  left: -40px;
+  z-index: 2;
+}
+#cardImagePlayer4{
+  position : relative;
+  left: -100px;
+  z-index: 3;
+}
+
+#cardImagePlayer5 {
+  position : relative;
+  left : -160px;
+  z-index: 4;
+}
+#playerCardsText {
+  text-align: center;
